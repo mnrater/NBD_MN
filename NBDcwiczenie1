@@ -14,7 +14,7 @@ object Cwiczenie1 {
         }
         oneA
       }
-      println("Zadanie 1A)")
+      println("Zadanie 1A")
       println(returnDaysA(daysList))
 
       //Zadanie1B
@@ -28,7 +28,7 @@ object Cwiczenie1 {
         }
         oneB
       }
-      println("Zadanie 1B)")
+      println("Zadanie 1B")
       println(returnDaysB(daysList))
 
       //Zadanie1C
@@ -42,7 +42,7 @@ object Cwiczenie1 {
         }
         oneC
       }
-      println("Zadanie 1C)")
+      println("Zadanie 1C")
       println (returnDaysC(daysList))
 
       //Zadanie2A
@@ -51,7 +51,7 @@ object Cwiczenie1 {
         case day :: Nil => day
         case day :: tail => day + ", " + recurencyList(tail)
       }
-      println("Zadanie 2A)")
+      println("Zadanie 2A")
       println(recurencyList(daysList))
 
       //Zadanie2B
@@ -60,7 +60,7 @@ object Cwiczenie1 {
         case day :: Nil => day
         case day :: tail => recurencyListReverse(tail) + ", " + day
       }
-      println("Zadanie 2B)")
+      println("Zadanie 2B")
       println(recurencyListReverse(daysList))
 
       //Zadanie3
@@ -71,28 +71,28 @@ object Cwiczenie1 {
           else tailRecur(daysTail.tail, ", ", acc + three + daysTail.head)
         tailRecur(days, "", "")
       }
-      println("Zadanie 3)")
+      println("Zadanie 3")
       println(recurencyListTail(daysList))
 
       //Zadanie4a
       def foldingLeft(days:List[String]):String = {
         days.foldLeft("")(_+_ + ", ")
       }
-      println("Zadanie 4A)")
+      println("Zadanie 4A")
       println(foldingLeft(daysList))
 
       //Zadanie4b
       def foldingRight(days:List[String]):String = {
         days.foldRight("")(_+", "+_)
       }
-      println("Zadanie 4B)")
+      println("Zadanie 4B")
       println(foldingRight(daysList))
 
       //Zadanie4c
       def foldingLeftP(days:List[String]):String = {
         days.filter(_.startsWith("P")).foldLeft("")(_+_ + ", ")
       }
-      println("Zadanie 4C)")
+      println("Zadanie 4C")
       println(foldingLeftP(daysList))
 
       //Zadanie5
